@@ -16,6 +16,11 @@ namespace B19_Ex05_Alex_321336182_Dor_300109006
         private const string k_EightSize = "Board Size: 8x8 (click to increase)";
         private const string k_TenSize = "Board Size: 10x10 (click to increase)";
         private const string k_TwelveSize = "Board Size: 12x12 (click to reset)";
+        private const int k_Small = 6;
+        private const int k_Medium = 8;
+        private const int k_Large = 10;
+        private const int k_XL = 12;
+
         private int m_SizeBoardUserSelect = 6;
         private bool m_isPlayAgainstFriend;
 
@@ -28,30 +33,30 @@ namespace B19_Ex05_Alex_321336182_Dor_300109006
         {
             switch (m_SizeBoardUserSelect)
             {
-                case 6:
+                case k_Small:
                     {
                         buttonChangeBoardSize.Text = k_EightSize;
-                        m_SizeBoardUserSelect = 8;
+                        m_SizeBoardUserSelect = k_Medium;
                         break;
                     }
 
-                case 8:
+                case k_Medium:
                     {
                         buttonChangeBoardSize.Text = k_TenSize;
-                        m_SizeBoardUserSelect = 10;
+                        m_SizeBoardUserSelect = k_Large;
                         break;
                     }
 
-                case 10:
+                case k_Large:
                     {
-                        m_SizeBoardUserSelect = 12;
                         buttonChangeBoardSize.Text = k_TwelveSize;
+                        m_SizeBoardUserSelect = k_XL;
                         break;
                     }
 
-                case 12:
+                case k_XL:
                     {
-                        m_SizeBoardUserSelect = 6;
+                        m_SizeBoardUserSelect = k_Small;
                         buttonChangeBoardSize.Text = k_SixSize;
                         break;
                     }
