@@ -35,32 +35,34 @@ namespace B19_Ex05_Alex_321336182_Dor_300109006
             {
                 case k_Small:
                     {
-                        buttonChangeBoardSize.Text = k_EightSize;
-                        m_SizeBoardUserSelect = k_Medium;
+                        updateBoardSize(k_Medium, k_EightSize);
                         break;
                     }
 
                 case k_Medium:
                     {
-                        buttonChangeBoardSize.Text = k_TenSize;
-                        m_SizeBoardUserSelect = k_Large;
+                        updateBoardSize(k_Large, k_TenSize);
                         break;
                     }
 
                 case k_Large:
                     {
-                        buttonChangeBoardSize.Text = k_TwelveSize;
-                        m_SizeBoardUserSelect = k_XL;
+                        updateBoardSize(k_XL, k_TwelveSize);
                         break;
                     }
 
                 case k_XL:
                     {
-                        m_SizeBoardUserSelect = k_Small;
-                        buttonChangeBoardSize.Text = k_SixSize;
+                        updateBoardSize(k_Small, k_SixSize);
                         break;
                     }
             }
+        }
+
+        private void updateBoardSize(int i_Size, String i_SizeMessege)
+        {
+            m_SizeBoardUserSelect = i_Size;
+            buttonChangeBoardSize.Text = i_SizeMessege;
         }
 
         private void buttonPlayAgainstFriend_Click(object sender, EventArgs e)
