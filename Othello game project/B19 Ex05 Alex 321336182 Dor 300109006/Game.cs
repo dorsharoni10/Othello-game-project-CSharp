@@ -10,7 +10,7 @@ namespace B19_Ex05_Alex_321336182_Dor_300109006
             PC
         }
 
-        private const string k_FirstPlayerName = "Black";
+        private const string k_FirstPlayerName = "Black"
         private const string k_SecondPlayerName = "White";
 
         public Game()
