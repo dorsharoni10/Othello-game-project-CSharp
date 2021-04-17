@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic
+﻿using System.Collections.Generic;
 
 namespace B19_Ex05_Alex_321336182_Dor_300109006
 {
