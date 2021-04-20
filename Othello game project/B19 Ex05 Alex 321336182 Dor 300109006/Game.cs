@@ -6,7 +6,7 @@ namespace B19_Ex05_Alex_321336182_Dor_300109006
     {
         public enum ePlayerType
         {
-            Human
+            Human,
             PC
         }
 
