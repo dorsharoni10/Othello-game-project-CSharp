@@ -14,7 +14,7 @@ namespace B19_Ex05_Alex_321336182_Dor_300109006
             _
         }
 
-        private eCellContent[,] m_Map
+        private eCellContent[,] m_Map;
 
         public Board(int i_Size)
         {
